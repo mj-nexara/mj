@@ -1,0 +1,22 @@
+{
+  "name": "MJ Software Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "settings": {
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "files.exclude": {
+      "__pycache__": true,
+      ".devcontainer": true
+    }
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-azuretools.vscode-docker",
+    "ms-toolsai.jupyter"
+  ],
+  "postCreateCommand": "pip install click mkdocs mkdocs-material",
+  "forwardPorts": [8000],
+  "remoteUser": "vscode"
+}
