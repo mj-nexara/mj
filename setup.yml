@@ -1,0 +1,34 @@
+mj-setup:
+  hardware:
+    - name: "Power Supply Check"
+      status: "pending"
+    - name: "Fan + Display"
+      status: "pending"
+    - name: "Keyboard Check"
+      status: "pending"
+
+  os_optimization:
+    - reinstall: true
+    - bloatware_removal: true
+    - driver_tool: "Snappy Driver Installer"
+
+  tools:
+    - git: "installed"
+    - vscode: "installed"
+    - python: "installed"
+    - nodejs: "installed"
+
+  project_structure:
+    - folders:
+        - MJ-NEXARA
+        - mj-docs
+        - nexara-utils
+    - files:
+        - .env
+        - bootstrap.sh
+        - deploy.yml
+
+  git_dns:
+    dns_flush: true
+    git_username: "MJ Ahmad"
+    git_email: "mj@example.com"

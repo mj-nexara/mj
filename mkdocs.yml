@@ -1,0 +1,14 @@
+# mkdocs.yml
+
+site_name: "MJ Software Documentation"
+site_description: "A Capsule of Dignity — Preserving Thought. Anchoring Trust."
+docs_dir: docs
+
+nav:
+  - Home: index.md
+
+theme:
+  name: readthedocs
+
+plugins:
+  - search
